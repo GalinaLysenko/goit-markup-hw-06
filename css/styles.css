@@ -287,6 +287,8 @@ body {
   border-width: 0px;
 }
 
+/* ======== MODAL =========*/
+
 .backdrop {
   position: fixed;
   z-index: 2;
@@ -340,10 +342,30 @@ body {
   margin-right: auto;
 }
 
-.modal-field,
-.modal-title {
+.modal-field {
   display: block;
   margin-top: 10px;
+}
+
+.modal-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.modal-block .title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: var(--main-colour);
+  margin-bottom: 12px;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
 }
 
 /* ======== END HERO =========*/
@@ -656,7 +678,7 @@ body {
   /* align-items: center; */
 }
 
-.social-footer .title {
+.footer-title {
   display: inline-block;
   font-family: Roboto;
   font-weight: 700;
@@ -733,6 +755,54 @@ body {
 
 .social-list-link:focus {
   background-color: var(--accent-colour);
+}
+
+.subscription-footer {
+  margin-left: 92px;
+  margin-top: 12px;
+}
+
+.contact-form-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-colour);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding-left: 28px;
+  text-align: start;
+  margin-left: 12px;
+}
+
+.contact-form-button::after {
+  content: url(../img/icon-send.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*======== END FOOTER ==========*/
@@ -908,7 +978,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-colour);
-  /* margin-top: 20px; */
 }
 
 .project-description {

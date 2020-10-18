@@ -77,25 +77,27 @@
 
             <form action="" method="post" class="modal-description">
               <!-- Разметка элементов модального окна -->
-              <label class="modal-field">
+              <div class="modal-block">
+               <label class="title">
                 Оставьте свои данные, мы вам перезвоним
-              <label class="modal-title">
-                <input type="text" />
-              </label>
-              <label class="modal-field">
-                <input type="tel" />
-              </label>
-              <label class="modal-field">
-                <input type="email" />
-              </label>
-              <label class="modal-field">
-                <textarea name="comment" rows="5" cols="45" placeholder="Оставьте комментарий"></textarea>
-              </label>
-
+                <label class="modal-field">
+                  <input type="text" name="user-name" />
+                </label>
+                <label class="modal-field">
+                  <input type="tel" name="user-phone" />
+                </label>
+                <label class="modal-field">
+                  <input type="email" name="user-email"/>
+                </label>
+                <label class="modal-field">
+                  <textarea name="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+                </label>
+              
                 <input type="checkbox" />
-              </label>
-            
-              <button type="submit">Отправить</button>
+               </label>
+               <button type="submit" class="modal-field">Отправить</button>
+              </div>
+
             </form>
 
            </div>
@@ -435,7 +437,7 @@
           </address>
         </div>
         <div class="social-footer">
-          <h2 class="title">присоединяйтесь</h2>
+          <h2 class="footer-title">присоединяйтесь</h2>
           <ul class="footer-social-list">
             <li class="social-list item">
               <a class="social-list-link" href="">
@@ -467,7 +469,17 @@
             </li>
           </ul>
         </div>
+      <div class="subscription-footer">
+        <h2 class="footer-title">Подпишитесь на рассылку</h2>
+        <form class="contact-form">
+          <input class="contact-form-email" type="email" name="email" placeholder="E-mail" required>
+          <button type="submit" class="contact-form-button">
+            Подписаться
+          </button>
+        </form>
       </div>
+      </div>
+
     </footer>
 
   <script src="./js/modal.js"></script>
