@@ -258,6 +258,8 @@ body {
   letter-spacing: 0.06em;
   border-width: 0px;
   padding: 10px 32px;
+  color: #ffffff;
+  background-color: var(--accent-colour);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: background-color, color;
@@ -265,7 +267,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover {
+/* .button:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
@@ -274,9 +276,9 @@ body {
   color: #ffffff;
   background-color: var(--accent-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
-.button:focus {
+/* .button:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
@@ -285,7 +287,7 @@ body {
   color: #ffffff;
   background-color: var(--accent-colour);
   border-width: 0px;
-}
+} */
 
 /* ======== MODAL =========*/
 
@@ -456,6 +458,7 @@ body {
 
 .checkbox__img {
   display: inline-block;
+  background-repeat: no-repeat;
   position: absolute;
   width: 16px;
   height: 16px;
