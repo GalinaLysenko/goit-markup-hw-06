@@ -357,14 +357,14 @@ body {
   color: #757575;
 }
 
-.modal-block {
+.modal-description {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 40px;
 }
 
-.modal-block .title {
+.modal-description .title {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -449,6 +449,10 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 7px;
+}
+
+.checkbox-link {
+  color: var(--accent-colour);
 }
 
 .checkbox-input {
@@ -893,6 +897,10 @@ body {
 .subscription-footer {
   margin-left: 92px;
   margin-top: 12px;
+}
+
+.contact-form {
+  display: table;
 }
 
 .contact-form-email {
